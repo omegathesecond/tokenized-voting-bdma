@@ -1,27 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SideMenu extends StatelessWidget {
-  const SideMenu({
-    Key? key,
-  }) : super(key: key);
+import 'package:get/get.dart';
 
+class SideMenuView extends GetView {
   @override
   Widget build(BuildContext context) {
-    return Drawer(
+     return Drawer(
       child: ListView(
         children: [
           DrawerHeader(
             child: Image.asset("assets/images/logo.png"),
           ),
           DrawerListTile(
-            title: "Categories",
+            title: "Dashboard",
             svgSrc: "assets/icons/menu_dashbord.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Buy Tokens",
+            title: "Transaction",
             svgSrc: "assets/icons/menu_tran.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Task",
+            svgSrc: "assets/icons/menu_task.svg",
+            press: () {},
+          ),
+          DrawerListTile(
+            title: "Documents",
+            svgSrc: "assets/icons/menu_doc.svg",
             press: () {},
           ),
           DrawerListTile(
@@ -50,6 +58,7 @@ class SideMenu extends StatelessWidget {
   }
 }
 
+/// Represents a tile on the side drawer menu
 class DrawerListTile extends StatelessWidget {
   const DrawerListTile({
     Key? key,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
-import '../../../constants.dart';
+import '../../../../../../constants.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -22,7 +22,7 @@ class Header extends StatelessWidget {
           ),
         if (!Responsive.isMobile(context))
           Text(
-            "Dashboard",
+            "Bonteh Digital Media Network",
             style: Theme.of(context).textTheme.headline6,
           ),
         if (!Responsive.isMobile(context))
