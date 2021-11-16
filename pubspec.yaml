@@ -35,6 +35,8 @@ dependencies:
   data_table_2: ^2.0.3
   get: ^4.3.8
   get_cli: ^1.6.0
+  octo_image: ^1.0.0+1
+  cached_network_image: ^3.1.0+1
 
 dev_dependencies:
   flutter_test:

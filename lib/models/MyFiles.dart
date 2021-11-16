@@ -1,52 +1,274 @@
-import 'package:admin/constants.dart';
-import 'package:flutter/material.dart';
+import 'package:admin/app/modules/home/nomination_category_model.dart';
 
-class CloudStorageInfo {
-  final String? svgSrc, title, totalStorage;
-  final int? numOfFiles, percentage;
-  final Color? color;
-
-  CloudStorageInfo({
-    this.svgSrc,
-    this.title,
-    this.totalStorage,
-    this.numOfFiles,
-    this.percentage,
-    this.color,
-  });
-}
-
-List demoMyFiles = [
-  CloudStorageInfo(
-    title: "Documents",
-    numOfFiles: 1328,
-    svgSrc: "assets/icons/Documents.svg",
-    totalStorage: "1.9GB",
-    color: primaryColor,
-    percentage: 35,
+List demoNominationCategories = [
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
   ),
-  CloudStorageInfo(
-    title: "Google Drive",
-    numOfFiles: 1328,
-    svgSrc: "assets/icons/google_drive.svg",
-    totalStorage: "2.9GB",
-    color: Color(0xFFFFA113),
-    percentage: 35,
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
   ),
-  CloudStorageInfo(
-    title: "One Drive",
-    numOfFiles: 1328,
-    svgSrc: "assets/icons/one_drive.svg",
-    totalStorage: "1GB",
-    color: Color(0xFFA4CDFF),
-    percentage: 10,
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
   ),
-  CloudStorageInfo(
-    title: "Documents",
-    numOfFiles: 5328,
-    svgSrc: "assets/icons/drop_box.svg",
-    totalStorage: "7.3GB",
-    color: Color(0xFF007EE5),
-    percentage: 78,
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
+  ),
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
+  ),
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
+  ),
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
+  ),
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
+  ),
+  NominationCategory(
+    id: "Love",
+    name: "Best Web Series",
+    lastVoteDate: "2021-34-23",
+    totalVotes: 1000,
+    imgUrl:
+        "https://i.picsum.photos/id/279/200/200.jpg?hmac=K-uW0woYRqVG_0bwZHp7tqD0lhiHByJ2DubSU4TIew4",
+    nominees: [
+      SingleNominee(
+        id: "1",
+        name: "Nominee 1",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "2",
+        name: "Nominee 2",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "3",
+        name: "Nominee 3",
+        tokenCount: 1000,
+      ),
+      SingleNominee(
+        id: "4",
+        name: "Nominee 4",
+        tokenCount: 1000,
+      ),
+    ],
   ),
 ];

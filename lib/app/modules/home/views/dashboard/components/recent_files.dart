@@ -1,16 +1,12 @@
+import 'package:admin/app/modules/home/nomination_category_model.dart';
 import 'package:admin/models/RecentFile.dart';
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 import '../../../../../../constants.dart';
 
-
-class RecentFiles extends StatelessWidget {
-  const RecentFiles({
-    Key? key,
-  }) : super(key: key);
-
+class NomineeList extends GetResponsiveView {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +19,7 @@ class RecentFiles extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Recent Files",
+            "Select who you want to vote for",
             style: Theme.of(context).textTheme.subtitle1,
           ),
           SizedBox(
@@ -33,18 +29,12 @@ class RecentFiles extends StatelessWidget {
               minWidth: 600,
               columns: [
                 DataColumn(
-                  label: Text("File Name"),
-                ),
-                DataColumn(
-                  label: Text("Date"),
-                ),
-                DataColumn(
-                  label: Text("Size"),
+                  label: Container(),
                 ),
               ],
               rows: List.generate(
-                demoRecentFiles.length,
-                (index) => recentFileDataRow(demoRecentFiles[index]),
+                sampleNomineeList.length,
+                (index) => nomineeListDataRow(sampleNomineeList[index]),
               ),
             ),
           ),
@@ -54,26 +44,15 @@ class RecentFiles extends StatelessWidget {
   }
 }
 
-DataRow recentFileDataRow(RecentFile fileInfo) {
+//represents a row in the nominee list
+class NomineeListRow extends GetResponsiveView {
+  SingleNominee? singleNominee;
+}
+
+nomineeListDataRow(SingleNominee singleNominee) {
   return DataRow(
     cells: [
-      DataCell(
-        Row(
-          children: [
-            SvgPicture.asset(
-              fileInfo.icon!,
-              height: 30,
-              width: 30,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(fileInfo.title!),
-            ),
-          ],
-        ),
-      ),
-      DataCell(Text(fileInfo.date!)),
-      DataCell(Text(fileInfo.size!)),
+      DataCell(Text(singleNominee.name!)),
     ],
   );
 }
